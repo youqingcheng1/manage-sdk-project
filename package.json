@@ -1,0 +1,49 @@
+{
+  "name": "manage-sdk-project",
+  "version": "1.0.0",
+  "description": "公共平台库",
+  "main": "lib/index.js",
+  "module": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "dev": "vite --host",
+    "build": "npm run clean && rollup --config && yalc push",
+    "clean": "rimraf lib"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.20.2",
+    "@babel/eslint-parser": "^7.19.1",
+    "@babel/plugin-syntax-jsx": "^7.18.6",
+    "@babel/preset-env": "^7.20.2",
+    "@rollup/plugin-inject": "^5.0.2",
+    "@typescript-eslint/eslint-plugin": "^5.10.1",
+    "@typescript-eslint/parser": "^5.10.1",
+    "@vitejs/plugin-vue": "^3.2.0",
+    "@vue/babel-preset-jsx": "^1.4.0",
+    "@vue/eslint-config-typescript": "^9.1.0",
+    "eslint": "^8.7.0",
+    "eslint-define-config": "^1.12.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-vue": "^8.3.0",
+    "only-allow": "^1.1.1",
+    "typescript": "^4.6.4",
+    "vite": "^3.2.3",
+    "vite-plugin-eslint": "^1.8.1",
+    "vue-eslint-parser": "^8.2.0",
+    "vue-tsc": "^1.0.9"
+  },
+  "dependencies": {
+    "dateformat": "^5.0.3",
+    "element-plus": "^2.2.23",
+    "js-base64": "^3.7.3",
+    "lodash": "^4.17.21",
+    "mitt": "^3.0.0",
+    "nprogress": "^0.2.0",
+    "vue": "^3.2.41",
+    "vue-router": "^4.1.6"
+  }
+}
