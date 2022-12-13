@@ -6,6 +6,16 @@ declare module '*.vue' {
   export default component
 }
 
+declare module '@' {
+  const value:any
+  export default value
+}
+
 declare type Indexable<T> = {
   [key: string]: T
+}
+
+interface ImportMetaEnv {}
+interface ImportMeta {
+  readonly env: ImportMetaEnv
 }
