@@ -1,5 +1,5 @@
 import { createApp, Component } from 'vue'
-import { router, getRoutes, App } from '@test/init'
+import { router, App } from '@test/init'
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
 import * as ElIcons from '@element-plus/icons-vue'

@@ -67,9 +67,9 @@ module.exports = defineConfig({
       'error',
       {
         html: {
-          void: 'always',
-          normal: 'never',
-          component: 'always'
+          void: 'never',
+          normal: 'any',
+          component: 'any'
         },
         svg: 'always',
         math: 'always'

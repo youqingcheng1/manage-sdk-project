@@ -1,0 +1,235 @@
+.site-nav::-webkit-scrollbar,
+.el-menu--popup::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.site-nav::-webkit-scrollbar-track,
+.el-menu--popup::-webkit-scrollbar-track {
+  background: 0 0;
+}
+
+.site-nav::-webkit-scrollbar-thumb,
+.el-menu--popup::-webkit-scrollbar-thumb {
+  background-color: #48526b;
+  // border-radius: 5px;
+}
+
+.site-nav::-webkit-scrollbar-thumb:hover,
+.el-menu--popup::-webkit-scrollbar-thumb:hover {
+  background-color: #515c79;
+}
+
+.site-nav::-webkit-scrollbar-corner,
+.el-menu--popup::-webkit-scrollbar-corner {
+  background-color: #535353;
+}
+
+.site-nav::-webkit-scrollbar-resizer,
+.el-menu--popup::-webkit-scrollbar-resizer {
+  background-color: #ff6e00;
+}
+
+.site-container {
+  height: inherit;
+  padding-top: 50px;
+  &.login-page {
+    padding-top: 0;
+  }
+}
+.el-aside,
+.el-main {
+  overflow: visible;
+}
+.site-content {
+  padding: 10px;
+  background-color: #fff;
+}
+
+.site-header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 2000;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  color: #333;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding-left: 0;
+  .site-logo {
+    h1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: inherit;
+    }
+  }
+}
+
+.site-main {
+  transition: margin-left .01s;
+  margin-left: 220px;
+  padding: 10px;
+  z-index: 1;
+  min-height: calc(100vh - 50px);
+  &.login-page {
+    margin-left: 0;
+  }
+}
+
+.site-aside {
+  position: fixed;
+  left: 0;
+  top: 50px;
+  height: calc(100vh - 50px);
+  background-color: #001529;
+  z-index: 1000;
+}
+
+.site-aside {
+  &.is-collapse {
+    & + .site-main {
+      margin-left: 64px;
+    }
+    .label {
+      transition: opacity .3s;
+      // opacity: 0;
+    }
+  }
+  &.label {
+    transition: opacity .3s;
+    opacity: 1;
+  }
+}
+.site-nav {
+  width: 220px;
+  height: calc(100vh - 136px);
+  overflow-x: hidden;
+  overflow-y: auto;
+  transition: width .3s;
+  .blank {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, .5);
+  }
+}
+
+.site-aside .el-menu,.el-menu {
+  background-color: #001529 !important;
+  border-right: 0;
+  a {
+    display: inline-block;
+    text-decoration: none;
+    color: #ccc;
+    &:hover {
+      color: #456fe7;
+    }
+  }
+  .el-menu-item {
+    &:hover, &.is-active {
+      background-color: #012747 !important;
+    }
+    > span:not(.first-title) {
+      vertical-align: top;
+    }
+  }
+}
+.el-menu-item,
+.el-submenu__title {
+  font-size: 12px !important;
+  display: flex;
+  align-items: center;
+  &:hover {
+    background-color: #012747 !important;
+  }
+}
+
+.site-collapse {
+  height: 30px;
+  background-color: #002d54;
+  cursor: pointer;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  i {
+    font-size: 18px;
+  }
+  &:hover {
+    background-color: #00325d;
+  }
+  span {
+    font-size: 18px;
+    color: #fff;
+  }
+}
+
+.view-history {
+  // margin-bottom: 10px;
+  overflow: hidden;
+  .tit {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  * {
+    float: left;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+  .view-item {
+    position: relative;
+    text-decoration: none;
+    color: #666;
+    padding: 0 10px;
+    background-color: #fff;
+    border-radius: 4px;
+    margin-right: 5px;
+    transition: all ease-in 0.05s;
+    font-size: 12px;
+    &:hover {
+      color: #fff;
+      background-color: #456fe7;
+    }
+  }
+}
+.el-menu-item,
+.el-submenu__title {
+  height: 44px !important;
+  line-height: 44px !important;
+  font-size: 12px !important;
+  display: flex;
+  align-items: center;
+}
+.el-submenu .el-menu-item,
+.el-menu--popup .el-menu-item {
+  height: 40px;
+  line-height: 40px;
+  font-size: 12px;
+  padding-right: 0;
+}
+.el-menu--vertical.is-scroll > .el-menu--popup {
+  max-height: calc(100vh - 68px);
+  // overflow-y: scroll;
+}
+.el-button{
+  &--link{
+      text-decoration: none;
+      vertical-align: top;
+  }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity .5s;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0
+}

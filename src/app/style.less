@@ -1,0 +1,31 @@
+@import '../assets/style/var.less';
+
+.site-main .view-history {
+  overflow: hidden;
+  .tit {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  * {
+    float: left;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+  .view-item {
+    position: relative;
+    text-decoration: none;
+    color: #666;
+    padding: 0 10px;
+    background-color: #fff;
+    border-radius: 4px;
+    margin-right: 5px;
+    transition: all ease-in 0.05s;
+    font-size: 12px;
+    &:hover,&.active {
+      color: #fff;
+      background-color: @c;
+    }
+  }
+}
