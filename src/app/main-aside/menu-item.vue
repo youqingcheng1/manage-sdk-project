@@ -1,6 +1,7 @@
 <template>
   <el-sub-menu :index="current.fe_uri" v-if="current">
     <template #title>
+      <!-- <el-icon><location /></el-icon> -->
       <i class="iconfont" v-if="current.icon" :class="[current.icon, {'icon': !!current.icon}]"></i>
       <label class="collapse fv-inline-text" v-if="!current.icon && collapse">{{ current.title }}</label>
       <span class="label">{{ current.title }}</span>

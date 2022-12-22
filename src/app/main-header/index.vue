@@ -1,11 +1,12 @@
 <template>
   <div class="header-container">
     <div class="system-info">
-      {{ systemInfo.name }}，欢迎你
+      <span style="color:#456fe7">{{ systemInfo.name }}系统</span>，欢迎你
     </div>
     <div class="user-info">
       <el-dropdown>
         <span class="el-dropdown-link">
+          <el-avatar :size="30" src="" style="margin-right:10px" />
           {{ userInfo.name }}
           <el-icon class="el-icon--right"><arrow-down /></el-icon>
         </span>

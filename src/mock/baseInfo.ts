@@ -475,5 +475,19 @@ export const menuTree = [
         ]
       }
     ]
+  },
+  {
+    id: 1730,
+    parent_id: 1729,
+    icon: '',
+    title: '测试页面',
+    slug: 'Test',
+    uri: '/test',
+    level: 3,
+    sort: 1,
+    status: 1,
+    type: 2,
+    display: 1,
+    items: []
   }
 ]

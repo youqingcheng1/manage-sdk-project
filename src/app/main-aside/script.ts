@@ -26,6 +26,7 @@ export default defineComponent({
       list: [] as Array<returnNavModel>
     })
 
+    // 重新组装导航栏数据
     const buildNavs = (data: Array<apiNavModel>): Array<returnNavModel> => {
       return data.filter(f => f.display).map(m => {
         const { id, parent_id, uri, title, icon } = m
@@ -38,6 +39,7 @@ export default defineComponent({
 
     // 重组navs数据
     state.list = buildNavs(menuTree)
+    console.log('navList', state.list)
 
     const asideWidth = computed(() => (state.isCollapse ? '64px' : '220px'))
     const defaultActive = computed(() => (useRoute() ? useRoute().path : '/'))
